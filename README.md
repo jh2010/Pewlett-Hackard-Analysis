@@ -18,7 +18,4 @@ The purpose of this analysis is to determine the number of retiring employees pe
 * A new [TABLE](https://w3resource.com/PostgreSQL/create-table.php) named **mentorship_eligibility** was created selecting all current employees with a **to_date** equal to **9999-01-01**.  This [TABLE](https://w3resource.com/PostgreSQL/create-table.php) shows all current employees that are about to retire and that are eligible to mentor other employees in the company.
 
 
-
-
-
 ## Summary

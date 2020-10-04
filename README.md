@@ -5,7 +5,7 @@ The purpose of this analysis is to determine the number of retiring employees pe
 
 
 ## Results
-
+![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/retiring_employees_title_count.png)
 
 
 ## Summary

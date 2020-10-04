@@ -12,7 +12,7 @@ The purpose of this analysis is to determine the number of retiring employees pe
 
 * A new [TABLE](https://w3resource.com/PostgreSQL/create-table.php) named **retiring_titles** was created by selecting all of titles from the **unique_titles** titles [TABLE](https://w3resource.com/PostgreSQL/create-table.php) and utilizing the [COUNT()](https://w3resource.com/PostgreSQL/postgresql-count-function.php) function.  This [TABLE](https://w3resource.com/PostgreSQL/create-table.php) shows the count of employees by titles.
 
-  ### Retiring titles
+  ##### Retiring titles
   ![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/retiring_employees_title_count.png)
 
 * A new [TABLE](https://w3resource.com/PostgreSQL/create-table.php) named **mentorship_eligibility** was created selecting all current employees with a **to_date** equal to **9999-01-01**.  This [TABLE](https://w3resource.com/PostgreSQL/create-table.php) shows all current employees that are about to retire and that are eligible to mentor other employees in the company.

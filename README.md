@@ -22,5 +22,35 @@ The purpose of this analysis is to determine the number of retiring employees pe
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-Engineering
+
+
+4275	"Engineer"
+3869	"Senior Staff"
+3750	"Staff"
+3705	"Senior Engineer"
+817	"Technique Leader"
+564	"Assistant Engineer"
+1	"Manager"
+
+424	"Senior Staff"
+396	"Engineer"
+300	"Staff"
+292	"Senior Engineer"
+77	"Technique Leader"
+60	"Assistant Engineer"
+
+
+**Engineer** - There are 4275 Engineers retiring and 396 eligible mentors available to train thier replacements.  Each mentor would need to train 10 replacements which would not be ideal.
+
+**Senior Staff** - There are 3869 Engineers retiring and 424 eligible mentors available to train thier replacements.  Each mentor would need to train 9 replacements which would not be ideal.
+
+**Staff** - There are 3750 Engineers retiring and 300 eligible mentors available to train thier replacements.  Each mentor would need to train 12.5 replacements which would not be ideal.
+
+**Senior Engineer** - There are 3705 Engineers retiring and 292 eligible mentors available to train thier replacements.  Each mentor would need to train 13 replacements which would not be ideal.
+
+**Technique Leader** - There are 817 Engineers retiring and 77 eligible mentors available to train thier replacements.  Each mentor would need to train 11 replacements which would not be ideal.
+
+**Assistant Engineer** - There are 564 Engineers retiring and 60 eligible mentors available to train thier replacements.  Each mentor would need to train 9.5 replacements which would not be ideal.
+
+**Manager** - Since there is only one manager a suitable mentor should be easy to find.
 

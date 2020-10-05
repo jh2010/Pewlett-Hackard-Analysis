@@ -3,7 +3,6 @@
 ## Overview
 The purpose of this analysis is to determine the number of retiring employees per title and identify employees who are eligible to participate in a mentorship program. The results will be presented in a bulleted list.
 
-
 ## Results
 
 * **Retirement Titles** - A new [table](https://w3resource.com/PostgreSQL/create-table.php) named **retirement_titles** was created by selecting employees who were born between January 1, 1952 and December 31, 1955 from the **employees** table and the **titles** tables by utilisizing an [INNER JOIN](https://www.w3resource.com/PostgreSQL/postgresql-inner-join.php) clause.  This result containes duplicates because some employees changes titles over their career.

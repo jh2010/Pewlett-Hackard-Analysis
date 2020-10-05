@@ -7,6 +7,9 @@ The purpose of this analysis is to determine the number of retiring employees pe
 
 * **Retirement Titles** - A new [table](https://w3resource.com/PostgreSQL/create-table.php) named **retirement_titles** was created by selecting employees who were born between January 1, 1952 and December 31, 1955 from the **employees** table and the **titles** tables by utilisizing an [INNER JOIN](https://www.w3resource.com/PostgreSQL/postgresql-inner-join.php) clause.  This result containes duplicates because some employees changes titles over their career.
 
+  ##### Retirement Titles Create Table SQL
+  ![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/retirement_titles_create_table_sql.png)
+---
 * **Unique Titles** - A new [table](https://w3resource.com/PostgreSQL/create-table.php) named **unique_titles** was created by selecting all records from the **retirement_titles** [table](https://w3resource.com/PostgreSQL/create-table.php) and utilizing the [DISTINCT ON](https://www.geekytidbits.com/postgres-distinct-on/)  function on the title column.  The [DISTINCT ON](https://www.geekytidbits.com/postgres-distinct-on/) function selected the most recent title for the employees.
 
 * **Retiring Titles** - A new [table](https://w3resource.com/PostgreSQL/create-table.php) named **retiring_titles** was created by selecting all of the titles from the **unique_titles** titles [table](https://w3resource.com/PostgreSQL/create-table.php) and utilizing the [COUNT()](https://w3resource.com/PostgreSQL/postgresql-count-function.php) function.  This [table](https://w3resource.com/PostgreSQL/create-table.php) shows the count of employees by title.

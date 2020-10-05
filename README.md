@@ -6,44 +6,22 @@ The purpose of this analysis is to determine the number of retiring employees pe
 
 ## Results
 
-* A new [TABLE](https://w3resource.com/PostgreSQL/create-table.php) named **retirement_titles** was created by selecting employees who were born between January 1, 1952 and December 31, 1955 from the **employees** table and the **titles** tables by utilisizing an [INNER JOIN](https://www.w3resource.com/PostgreSQL/postgresql-inner-join.php)  clause.  This result containes duplicates because some employees changes titles over thier career.
+* A new [table](https://w3resource.com/PostgreSQL/create-table.php) named **retirement_titles** was created by selecting employees who were born between January 1, 1952 and December 31, 1955 from the **employees** table and the **titles** tables by utilisizing an [INNER JOIN](https://www.w3resource.com/PostgreSQL/postgresql-inner-join.php)  clause.  This result containes duplicates because some employees changes titles over thier career.
 
-* A new [TABLE](https://w3resource.com/PostgreSQL/create-table.php) named unique_titles was created by selecting all records from the **retirement_titles** tables and utilizing the [DISTINCT ON](https://www.geekytidbits.com/postgres-distinct-on/)  function on the title column.  The [DISTINCT ON](https://www.geekytidbits.com/postgres-distinct-on/) function selected the most recent title for the employees.
+* A new [table](https://w3resource.com/PostgreSQL/create-table.php) named unique_titles was created by selecting all records from the **retirement_titles** tables and utilizing the [DISTINCT ON](https://www.geekytidbits.com/postgres-distinct-on/)  function on the title column.  The [DISTINCT ON](https://www.geekytidbits.com/postgres-distinct-on/) function selected the most recent title for the employees.
 
-* A new [TABLE](https://w3resource.com/PostgreSQL/create-table.php) named **retiring_titles** was created by selecting all of titles from the **unique_titles** titles [TABLE](https://w3resource.com/PostgreSQL/create-table.php) and utilizing the [COUNT()](https://w3resource.com/PostgreSQL/postgresql-count-function.php) function.  This [TABLE](https://w3resource.com/PostgreSQL/create-table.php) shows the count of employees by titles.
+* A new [table](https://w3resource.com/PostgreSQL/create-table.php) named **retiring_titles** was created by selecting all of titles from the **unique_titles** titles [table](https://w3resource.com/PostgreSQL/create-table.php) and utilizing the [COUNT()](https://w3resource.com/PostgreSQL/postgresql-count-function.php) function.  This [TABLE](https://w3resource.com/PostgreSQL/create-table.php) shows the count of employees by titles.
 
   ##### Retiring titles
   ![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/retiring_employees_title_count.png)
 
-* A new [TABLE](https://w3resource.com/PostgreSQL/create-table.php) named **mentorship_eligibility** was created selecting all current employees with a **to_date** equal to **9999-01-01**.  This [TABLE](https://w3resource.com/PostgreSQL/create-table.php) shows all current employees that are about to retire and that are eligible to mentor other employees in the company.
+* A new [table](https://w3resource.com/PostgreSQL/create-table.php) named **mentorship_eligibility** was created selecting all current employees with a **to_date** equal to **9999-01-01**.  This [table](https://w3resource.com/PostgreSQL/create-table.php) shows all current employees that are about to retire and that are eligible to mentor other employees in the company.
 
 
 ## Summary
-**Question 1**: How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+After reviewing the output of the employees that are ready to retire, we established that there will be 16981 vacancies once the first wave of retirements start.
 
-
-
-
-**Question 2**: Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-
-In order to establish wether or not there are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees, we needed create a table named **retirees_first_wave** which included 
-
-##### Retirees first wave
-![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/retirees_first_wave.png)
-
-##### Retirees first wave titles
-![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/retirees_first_wave_titles.png)
-
-##### Retirees first wave titles output
-![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/retirees_first_wave_titles_output.png)
-
-##### Retiring employees title_count
-![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/retiring_employees_title_count.png)
-
-##### Mentorship eligibility titles output
-![image_name](https://github.com/jh2010/Pewlett-Hackard-Analysis/blob/master/images/mentorship_eligibility_titles_output.png)
-
-The breakdown by position below was generated by utilizing the **mentorship_eligibility** table and the new table named **retirees_first_wave_titles**.
+In order to establish wether or not there are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees, we needed to create two additional tables and the results are listed below.
 
 **Engineer** - There are 4275 Engineers retiring and 396 eligible mentors available to train thier replacements.  Each mentor would need to train 10 replacements.
 
@@ -59,3 +37,4 @@ The breakdown by position below was generated by utilizing the **mentorship_elig
 
 **Manager** - Since there is only one manager a suitable mentor should be easy to find.
 
+Since we do not have sufficient information about mentors workload, we cannot determine wether or not the company will have enough mentors.
